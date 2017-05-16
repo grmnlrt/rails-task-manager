@@ -1,0 +1,8 @@
+<h1><%= @task.name %></h1>
+<p><%= @task.description %></p>
+<% if @task.done == true %>
+  <p class="task done">Done</p>
+<% else %>
+  <p class="task done">Not done yet</p>
+<% end %>
+<%= link_to "Go back to your tasks", tasks_path %>
